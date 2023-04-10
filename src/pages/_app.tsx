@@ -1,6 +1,19 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "styled-components";
+const theme = {
+  primary: "green",
+};
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const App = (props: AppProps) => {
+  const { Component, pageProps } = props;
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+};
+
+export default App;
