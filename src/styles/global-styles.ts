@@ -1,26 +1,41 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-    letter-spacing: -1px;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
+#__next{
+  width: 100%;
+  height: 100%;
+}
 
-  .txt-c {
-    text-align: center;
-  }
-  .txt-r {
-    text-align: right;
-  }
-  .txt-l {
-    text-align: left;
-  }
-  p {
-    margin: 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+header,
+main,
+footer,
+nav,
+section,
+article,
+aside {
+  display: block;
+}
+
 `;
