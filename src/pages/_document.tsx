@@ -7,7 +7,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <meta charSet="utf-8" />
+          <title>이준영❤️최보경 결혼합니다.</title>
+        </Head>
         <body>
           <Main />
           <NextScript />
