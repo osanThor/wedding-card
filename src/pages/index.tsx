@@ -3,9 +3,18 @@ import { Box, Container } from "@mui/material";
 
 export default function Home() {
   return (
-    <Container>
-      <Box p={2} pt={0} position="relative" minHeight={800}>
+    <Container maxWidth="sm" sx={{ p: 0, pl: 0, pr: 0 }}>
+      <Box maxWidth="sm" position="relative">
         <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
+        <Box
+          position="absolute"
+          border="1px solid white"
+          zIndex={9}
+          width="calc(100% - 32px)"
+          height="calc(100% - 32px)"
+          top={16}
+          left={16}
+        />
       </Box>
       <Box p={2}>소중한 분들을 초대합니다~ 블라블라(string)</Box>
       <Box p={2}>웨딩 갤러리(loop slide gallery)</Box>
