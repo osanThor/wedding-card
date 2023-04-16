@@ -1,5 +1,5 @@
 import Img from "@/copmonents/common/img";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 export default function Home() {
   return (
@@ -14,7 +14,24 @@ export default function Home() {
           height="calc(100% - 32px)"
           top={16}
           left={16}
-        />
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Box bgcolor="rgba(255,255,255,0.4)" width={200} height={300} p={2}>
+            <Typography
+              variant="h1"
+              component="h2"
+              fontSize={30}
+              fontWeight="bolder"
+            >
+              이준영 최보경
+            </Typography>
+            <Typography variant="subtitle1" fontSize={20}>
+              Wedding Day
+            </Typography>
+          </Box>
+        </Box>
       </Box>
       <Box p={2}>소중한 분들을 초대합니다~ 블라블라(string)</Box>
       <Box p={2}>웨딩 갤러리(loop slide gallery)</Box>
