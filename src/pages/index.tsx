@@ -1,10 +1,12 @@
-import Img from "@/copmonents/common/img";
+import Calendar from "@/components/calendar";
+import Img from "@/components/common/img";
+import Gallery from "@/components/gallery";
 import { Box, Container, Typography } from "@mui/material";
 
 export default function Home() {
   return (
     <Container maxWidth="sm" sx={{ p: 0, pl: 0, pr: 0 }}>
-      <Box maxWidth="sm" position="relative">
+      <Box maxWidth="sm" position="relative" mb={2}>
         <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
         <Box
           position="absolute"
@@ -30,12 +32,20 @@ export default function Home() {
             <Typography variant="subtitle1" fontSize={20}>
               Wedding Day
             </Typography>
+            <Typography>파티웨딩유 2층 아모르홀</Typography>
+            <Typography>2024.01.27</Typography>
           </Box>
         </Box>
       </Box>
-      <Box p={2}>소중한 분들을 초대합니다~ 블라블라(string)</Box>
-      <Box p={2}>웨딩 갤러리(loop slide gallery)</Box>
-      <Box p={2}>달력 날짜</Box>
+      <Box p={2} mb={2}>
+        소중한 분들을 초대합니다~ 블라블라(string)
+      </Box>
+      <Box p={2} overflow="hidden" mb={2}>
+        <Gallery />
+      </Box>
+      <Box p={2}>
+        <Calendar />
+      </Box>
       <Box p={2}>음식 안내</Box>
       <Box p={2}>지도 (map API)</Box>
       <Box p={2}>교통안내</Box>
