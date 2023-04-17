@@ -40,7 +40,7 @@ aside {
 }
 .swiper{
   width: 100%;
-  height: 700px;
+  height: auto;
 }
 .swiper-slide{
   border-radius: 5px;
