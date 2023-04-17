@@ -1,5 +1,13 @@
 import Img from "@/copmonents/common/img";
 import { Box, Container, Typography } from "@mui/material";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { EffectCards } from "swiper";
 
 export default function Home() {
   return (
@@ -30,11 +38,52 @@ export default function Home() {
             <Typography variant="subtitle1" fontSize={20}>
               Wedding Day
             </Typography>
+            <Typography>파티웨딩유 2층 아모르홀</Typography>
+            <Typography>2024.01.27</Typography>
           </Box>
         </Box>
       </Box>
       <Box p={2}>소중한 분들을 초대합니다~ 블라블라(string)</Box>
-      <Box p={2}>웨딩 갤러리(loop slide gallery)</Box>
+      <Box p={2}>
+        <Swiper
+          effect={"cards"}
+          grabCursor={true}
+          modules={[EffectCards]}
+          className="mySwiper"
+          loop={true}
+        >
+          <SwiperSlide>
+            <Box>
+              <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box>
+              <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box>
+              <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box>
+              <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box>
+              <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box>
+              <Img src="/assets/images/ex.jpg" alt="main" layout="fill" />
+            </Box>
+          </SwiperSlide>
+        </Swiper>
+      </Box>
       <Box p={2}>달력 날짜</Box>
       <Box p={2}>음식 안내</Box>
       <Box p={2}>지도 (map API)</Box>

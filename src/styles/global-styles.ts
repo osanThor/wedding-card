@@ -38,5 +38,11 @@ article,
 aside {
   display: block;
 }
-
+.swiper{
+  width: 100%;
+  height: 700px;
+}
+.swiper-slide{
+  border-radius: 5px;
+}
 `;
